@@ -1,16 +1,16 @@
 body {
-  margin: 0;
   padding: 30px;
+  margin: 0;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
   color: $uoc-corporate;
+  background-color: $uoc-bg;
 }
 
 .uoc-logo {
   display: block;
-  margin-bottom: 20px;
   width: 300px;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .uoc-title {
