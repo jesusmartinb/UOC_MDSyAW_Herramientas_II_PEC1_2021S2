@@ -1,24 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Currículum Vitae Jesús Martín Blanco</title>
   </head>
   <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title"><i class="fas fa-university"></i> Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <p>
-        Esta es una plantilla de inicio para los cursos de herramientas avanzadas de HTML y CSS del Máster en Aplicaciones Multimedia y del Máster Programa de Desarrollo de Aplicaciones Web y Sitios Web en la Universitat Oberta de Catalunya.
-    </p>
+    <div class="wrapper">
+        <header class="hero">
+            <h1 class="hero__titulo">
+                Jesús Martín Blanco
+            </h1>
+            <p class="hero__slogan">
+                Desarrollador de aplicaciones web
+            </p>
+            <button class="button button--black">
+                <span class="button__texto">Abierto a empleo</span>
+            </button>
+        </header>
+        <main class="stack">
+            <section class="stack__doing">
+                <article class="stack__docando">
+                    <h3 class="stack__titulo">
+                        ¿Qué hago?
+                    </h3>
+                    <p class="stack__extracto">
+                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Illo iure odit temporibus quaerat exercitationem, quisquam beatae nihil aut qui magni ex at atque! Temporibus saepe qui numquam, blanditiis officiis placeat tenetur odit similique vitae, distinctio et explicabo ipsam iusto architecto culpa ea ratione officia dicta? Non provident dicta fuga placeat!
+                    </p>
+                </article>
+                <article class="stack__docando">
+                    <h3 class="stack__titulo">
+                        ¿Qué puedo hacer?
+                    </h3>
+                    <p class="stack__extracto">
+                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Illo iure odit temporibus quaerat exercitationem, quisquam beatae nihil aut qui magni ex at atque! Temporibus saepe qui numquam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores unde accusantium officia vel quibusdam temporibus recusandae earum dignissimos similique alias assumenda velit, non perspiciatis!
+                    </p>
+                </article>
+            </section>
+            <section class="stack__work">
+                <header class="head">
+                    <h2 class="head__titulo">
+                        Trabajo
+                    </h2>
+                    <p class="head__extracto">
+                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Rem, deserunt. Tempore aliquid officiis optio, voluptates, eligendi hic dignissimos debitis quisquam ipsam reprehenderit dolorem sint libero! Quasi eligendi ut, illum ad saepe accusantium modi architecto id?
+                    </p>
+                </header>
+                <div class="cards">
+                    <article class="card">
+                        <aside class="card__aside">
+                            <i class="card__icono fa fa-hourglass-1"></i>
+                        </aside>
+                        <div class="card__body">
+                            <header class="card__header">
+                                <h3 class="card__titulo">
+                                    Trabajo 1
+                                </h3>
+                            </header>
+                            <p class="card__extracto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <aside class="card__aside">
+                            <i class="card__icono fa fa-briefcase"></i>
+                        </aside>
+                        <div class="card__body">
+                            <header class="card__header">
+                                <h3 class="card__titulo">
+                                    Trabajo 2
+                                </h3>
+                            </header>
+                            <p class="card__extracto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <aside class="card__aside">
+                            <i class="card__icono fa fa-laptop"></i>
+                        </aside>
+                        <div class="card__body">
+                            <header class="card__header">
+                                <h3 class="card__titulo">
+                                    Trabajo 3
+                                </h3>
+                            </header>
+                            <p class="card__extracto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <aside class="card__aside">
+                            <i class="card__icono fa fa-code-fork"></i>
+                        </aside>
+                        <div class="card__body">
+                            <header class="card__header">
+                                <h3 class="card__titulo">
+                                    Trabajo 4
+                                </h3>
+                            </header>
+                            <p class="card__extracto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__stack">
+                <section class="footer__redes redes">
+                    <h2 class="redes__titulo">
+                        En las redes sociales
+                    </h2>
+                    <p class="redes__extracto">
+                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Totam aliquam nemo quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus voluptate qui architecto dolor facilis?
+                    </p>
+                    <a href="#" class="button button--absolute button--white">
+                        <span class="button__texto">Abierto a empleo</span>
+                    </a>
+                </section>
+                <section class="footer__video video">
+                    <figure class="video__wrapper">
+                        <iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/rPXMfd9yIk4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                </section>
+            </div>
+        </footer>
+    </div>
+
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
