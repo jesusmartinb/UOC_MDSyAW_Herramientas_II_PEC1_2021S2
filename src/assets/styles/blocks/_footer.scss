@@ -1,0 +1,40 @@
+/* Footer */
+.footer {
+  padding: 1rem;
+
+  @include desktop {
+    max-width: 92rem;
+    margin: $bloque-centrado;
+  }
+}
+
+.footer__stack {
+  display: grid;
+  margin-top: 2rem;
+
+  @extend .stack__work;
+  grid-template-rows: 1fr 1fr;
+
+  @include movil {
+    grid-template-rows: 1fr 1.5fr;
+  }
+
+  @include small-tablet {
+    grid-template-rows: 1fr 2fr;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    column-gap: 3rem;
+  }
+}
+
+.footer__redes,
+.footer__video {
+  min-width: 0;
+}
+
+.footer__redes {
+  text-align: $align-redes;
+}

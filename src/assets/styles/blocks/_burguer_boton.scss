@@ -1,0 +1,18 @@
+/* Botón hamburguesa */
+.burguer-boton {
+  position: fixed;
+  top: 4px;
+  left: 5px;
+  z-index: 4;
+  width: 45px;
+  height: 45px;
+  font-size: 2.8rem;
+  line-height: 45px;
+  text-align: center;
+  background-color: rgba(255,255,255,.9);
+  border-radius: $border-radius-iconos;
+
+  @include tablet {
+    display: none;
+  }
+}

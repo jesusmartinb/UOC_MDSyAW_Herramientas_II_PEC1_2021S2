@@ -1,0 +1,76 @@
+.card-image {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  vertical-align: top;
+  border-radius: $border-radius;
+  box-shadow: 3px 3px 6px $negro;
+
+  /* Para los elementos imagen y body del bloque card-image se cambia las propiedades opacity y bottom mediante una transición cuando el ratón pasa por encima del bloque card-image */
+  &:hover {
+    & .card-image__image {
+      opacity: .6;
+    }
+
+    & .card-image__body {
+      bottom: 0;
+    }
+  }
+}
+
+.card-image__media {
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.card-image__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: $border-radius;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+/* Se situa fuera de la vista con bottom -100% y overflow hidden para el bloque card-image. Mediante la transición se situa en bottom 0 y se hace visible en el estado hover del bloque card-image, al retirar el ratón vuelve a posición inicial dejando se ser visible */
+.card-image__body {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  color: $blanco;
+  background: rgba(10,10,10,.7) none repeat scroll 0 0;
+  transition: all .5s ease 0s;
+}
+
+.card-image__title,
+.card-image__title-link,
+.card-image__subtitle,
+.card-image__copy {
+  margin: .3rem 0;
+}
+
+.card-image__title-link {
+  display: block;
+  padding: 10px 20px 10px 10px;
+  font-size: 2.4rem;
+  color: $color-masterbrand;
+  text-align: $left;
+  text-decoration: none;
+}
+
+.card-image__subtitle {
+  padding: 0 10px 5px;
+  font-size: 1.8rem;
+  text-align: $left;
+}
+
+.card-image__copy {
+  padding-left: 1rem;
+  font-size: 2rem;
+  text-align: $left;
+}

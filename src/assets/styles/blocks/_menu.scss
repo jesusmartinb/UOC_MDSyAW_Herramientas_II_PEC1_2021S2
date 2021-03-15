@@ -1,0 +1,72 @@
+/* Menú de navegación principal */
+.main-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -100vw;
+  background-color: $color-bg;
+  border-radius: $border-radius;
+  box-shadow: 0 0 6px $shadow;
+  transition: all .3s ease;
+
+  @include tablet {
+    position: sticky;
+    position: 0;
+    width: 100%;
+    max-width: 92rem;
+    height: auto;
+    margin: $bloque-centrado;
+    background-color: $color-masterbrand;
+  }
+}
+
+/* La clase is-active se añade y elimina dinamicamente con javascript al hacer
+clicK en el botón hamburguesa y en los enlaces del menu para anchos inferiores a 730px */
+.main-nav.is-active {
+  margin-left: 0;
+
+  /* Si cambiamos el ancho del dispositivo necesitamos reestablecer el margen izquierdo */
+
+  @include tablet {
+    margin-left: auto;
+  }
+}
+
+.main-nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 6rem 0;
+  font-weight: bold;
+  text-align: $center;
+  text-transform: uppercase;
+  list-style-type: none;
+  border: 2px solid $color-border;
+
+  @include tablet {
+    display: grid;
+    width: 100%;
+    max-width: 92rem;
+    margin: $bloque-centrado;
+    grid-template-columns: repeat(5, 1fr);
+    border: none;
+  }
+}
+
+.main-nav__item {
+  padding: 1.5rem;
+  margin: .5rem 0;
+  border: 1px solid $color-corporate;
+
+  @include tablet {
+    padding-top: 3rem;
+    border: none;
+  }
+}
+
+.main-nav__link {
+  color: $negro;
+  text-decoration: none;
+}

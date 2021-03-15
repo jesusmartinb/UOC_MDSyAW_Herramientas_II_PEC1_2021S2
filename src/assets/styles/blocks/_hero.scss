@@ -1,0 +1,29 @@
+/* Bloque hero */
+.hero {
+  /* <span>Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pankaj Patel</a> on <a href="https://unsplash.com/collections/2284668/desarrollo-web-%2F-web-developer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
+
+  @include bg-image("../images/hero1.jpg");
+  min-height: 24.8rem;
+  padding: 3rem;
+  color: $color-masterbrand;
+  text-align: center;
+
+  @include desktop {
+    min-height: 34rem;
+  }
+}
+
+.hero__titulo {
+  margin: 0 0 3rem;
+
+  @include desktop {
+    margin: 4rem 0;
+  }
+}
+
+.hero__slogan {
+
+  @include desktop {
+    margin-bottom: 4rem;
+  }
+}
