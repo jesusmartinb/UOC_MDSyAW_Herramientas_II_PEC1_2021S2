@@ -230,14 +230,14 @@
     "selector-max-id": 0,
     "selector-max-specificity": null,
     "selector-max-type": 2,
-    "selector-nested-pattern": "^&:",
+    "selector-nested-pattern": "^&",
     "selector-no-qualifying-type": [true, {
       "ignore": [
         "attribute"
       ]
     }],
     "selector-no-vendor-prefix": true,
-    "max-nesting-depth": 1,
+    "max-nesting-depth": 2,
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "font-family-name-quotes": "always-where-recommended",
@@ -305,11 +305,7 @@
         "comments"
       ]
     }],
-    "max-line-length": [100, {
-      "ignore": [
-        "comments"
-      ]
-    }],
+    "max-line-length": null,
     "no-eol-whitespace": null,
     "no-empty-first-line": true,
     "unicode-bom": never
