@@ -1,0 +1,55 @@
+@mixin bg-image($image, $repeat: no-repeat, $attachment: scroll, $position: left top, $clip: border-box, $origin: padding-box, $size: cover) {
+  background-image: url("#{$image}");
+  background-repeat: #{$repeat};
+  background-attachment: #{$attachment};
+  background-position: #{$position};
+  background-clip: #{$clip};
+  background-origin: #{$origin};
+  background-size: #{$size};
+}
+
+@mixin movil {
+
+  @media only screen and (min-width: #{$movil}) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+
+  @media only screen and (min-width: #{$small-tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+
+  @media only screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+
+  @media only screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin cards($cards) {
+  .cards {
+
+    @if $cards > 1 {
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      @include desktop {
+        gap: 4rem;
+      }
+    }
+  }
+}
