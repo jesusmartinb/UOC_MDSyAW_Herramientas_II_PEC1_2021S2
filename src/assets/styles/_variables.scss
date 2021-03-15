@@ -1,10 +1,13 @@
+/* Se carga el módulo color */
+
 @use "sass:color";
 
+/* Fuentes */
 $font-size-base: 10px;
-
 $font-family-sans-serif: Roboto, sans-serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
+/* Colores */
 $blanco: #fff;
 $gris: #555;
 $negro: #000;
@@ -24,11 +27,13 @@ $color-active: $color-bg;
 $color-border: $negro;
 $shadow: $negro;
 
+/* Tamaños breakpoint de Media Queries */
 $movil: 480px;
 $small-tablet: 520px;
 $tablet: 730px;
 $desktop: 920px;
 
+/* Alineaciones */
 $center: center;
 $justify: justify;
 $right: right;
@@ -38,3 +43,9 @@ $align-stack: $justify;
 $align-title: $center;
 $align-head: $center;
 $align-redes: $center;
+
+$bloque-centrado: 0 auto;
+
+/* Bordes */
+$border-radius: 5px;
+$border-radius-iconos: 50%;

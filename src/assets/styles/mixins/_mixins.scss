@@ -1,3 +1,5 @@
+/* Mixin para las imágenes de background */
+
 @mixin bg-image($image, $repeat: no-repeat, $attachment: scroll, $position: left top, $clip: border-box, $origin: padding-box, $size: cover) {
   background-image: url("#{$image}");
   background-repeat: #{$repeat};
@@ -7,6 +9,8 @@
   background-origin: #{$origin};
   background-size: #{$size};
 }
+
+/* Mixins para Media Queries */
 
 @mixin movil {
 
@@ -35,6 +39,8 @@
     @content;
   }
 }
+
+/* Mixin para cards. Cuando hay más de una card en la sección se incluyen las media queries para tablet y desktop en caso contrario no */
 
 @mixin cards($cards) {
   .cards {
