@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="wrapper">
-        <header class="hero">
+        <header class="hero" id="home">
             <h1 class="hero__titulo">
                 Jesús Martín Blanco
             </h1>
@@ -23,92 +23,289 @@
                 <span class="button__texto">Abierto a empleo</span>
             </button>
         </header>
+        <i class="fas fa-bars icon-menu burguer-boton" id="boton-menu"></i>
+        <nav class="main-nav" aria-label="Main">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#home" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#training" class="main-nav__link">Formación</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#work" class="main-nav__link">Trabajo</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#portfolio" class="main-nav__link">Portfolio</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#social-media" class="main-nav__link">Redes</a>
+                </li>
+            </ul>
+        </nav>
         <main class="stack">
             <section class="stack__doing">
-                <article class="stack__docando">
+                <article class="stack__docando" id="do">
                     <h3 class="stack__titulo">
                         ¿Qué hago?
                     </h3>
                     <p class="stack__extracto">
-                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Illo iure odit temporibus quaerat exercitationem, quisquam beatae nihil aut qui magni ex at atque! Temporibus saepe qui numquam, blanditiis officiis placeat tenetur odit similique vitae, distinctio et explicabo ipsam iusto architecto culpa ea ratione officia dicta? Non provident dicta fuga placeat!
+                        <strong>Desarrollador web</strong> con más de 10 años de experiencia en desarrollo front con HTML5, CSS3, JavaScript, SEO y 2 años de experiencia en desarrollo back en PHP, Java y Python. Apasionado del software de alta calidad aplicando los principios de código limpio y solido con inclusión de sistemas de testeo.
                     </p>
                 </article>
-                <article class="stack__docando">
+                <article class="stack__docando" id="cando">
                     <h3 class="stack__titulo">
                         ¿Qué puedo hacer?
                     </h3>
                     <p class="stack__extracto">
-                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Illo iure odit temporibus quaerat exercitationem, quisquam beatae nihil aut qui magni ex at atque! Temporibus saepe qui numquam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores unde accusantium officia vel quibusdam temporibus recusandae earum dignissimos similique alias assumenda velit, non perspiciatis!
+                        <strong>Sitios, aplicaciones web, gestión y administración de servidores</strong> mediante la utilización de las últimas tecnologías y las más modernas herramientas de front-end y back-end, entre las que se incluyen SASS, Bootstrap, Tailwind CSS, Stylelint, TypeScript, Node, Express, Angular, MongoDB, npm, Webpack, Parcel, Jest, Mocha, Git, CodeIgniter, Laravel, MySQL, Django, Linux, Ubuntu, Apache, Nginx.
                     </p>
                 </article>
             </section>
-            <section class="stack__work">
+            <section class="stack__training" id="training">
                 <header class="head">
                     <h2 class="head__titulo">
-                        Trabajo
+                        Formación
                     </h2>
                     <p class="head__extracto">
-                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Rem, deserunt. Tempore aliquid officiis optio, voluptates, eligendi hic dignissimos debitis quisquam ipsam reprehenderit dolorem sint libero! Quasi eligendi ut, illum ad saepe accusantium modi architecto id?
+                        <strong>Es una constante</strong> que me permite afrontar nuevos retos con una mejora continua como profesional y persona.
                     </p>
                 </header>
                 <div class="cards">
                     <article class="card">
                         <aside class="card__aside">
-                            <i class="card__icono fa fa-hourglass-1"></i>
+                            <i class="card__icono fas fa-laptop-code"></i>
                         </aside>
                         <div class="card__body">
                             <header class="card__header">
                                 <h3 class="card__titulo">
-                                    Trabajo 1
+                                    <a class="card__link" href="https://estudios.uoc.edu/es/masters-universitarios/desarrollo-sitios-aplicaciones-web/presentacion" target="_blank">Máster Universitario De Desarrollo De Sitios Y Aplicaciones Web</a>
                                 </h3>
+                                <p class="card__institution">
+                                    Universitat Oberta de Catalunya
+                                </p>
+                                <p class="card__period">
+                                    2019 - Momento actual
+                                </p>
                             </header>
                             <p class="card__extracto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                                Forma profesionales especialistas en este ámbito, capaces de dar respuesta a la creciente demanda de personal en desarrollo y programación web.
                             </p>
                         </div>
                     </article>
                     <article class="card">
                         <aside class="card__aside">
-                            <i class="card__icono fa fa-briefcase"></i>
+                            <i class="card__icono fas fa-user-graduate"></i>
                         </aside>
                         <div class="card__body">
                             <header class="card__header">
                                 <h3 class="card__titulo">
-                                    Trabajo 2
+                                    <a class="card__link" href="https://formacionpermanente.fundacion.uned.es/tp_actividad/idactividad/11525" target="_blank">Máster en Diseño y Desarrollo de Aplicaciones y Entornos Web</a>
                                 </h3>
+                                <p class="card__institution">
+                                    Universidad Nacional de Educacion a Distancia
+                                </p>
+                                <p class="card__period">
+                                    2021 - Momento actual
+                                </p>
                             </header>
                             <p class="card__extracto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                                El plan de estudios del máster está estructurado en tres grandes ámbitos: fundamentos de diseño web y maquetación (HTML y CSS y diseño de interfaces), desarrollo web (programación en JavaScript, desarrollo front-end y desarrollo back-end con PHP) y herramientas para el diseño y el desarrollo.
                             </p>
                         </div>
                     </article>
                     <article class="card">
                         <aside class="card__aside">
-                            <i class="card__icono fa fa-laptop"></i>
+                            <i class="card__icono fas fa-school"></i>
                         </aside>
                         <div class="card__body">
                             <header class="card__header">
                                 <h3 class="card__titulo">
-                                    Trabajo 3
+                                    <a class="card__link" href="#">E-learning</a>
                                 </h3>
+                                <p class="card__institution">
+                                    Autoaprendizaje
+                                </p>
+                                <p class="card__period">
+                                    Desde 2009
+                                </p>
                             </header>
                             <p class="card__extracto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                                Formación adquirida en diferentes plataformas como Udemy, LinkedIn Learning, FrontEnd Masters, Platzi, Escuela IT,
                             </p>
                         </div>
                     </article>
                     <article class="card">
                         <aside class="card__aside">
-                            <i class="card__icono fa fa-code-fork"></i>
+                            <i class="card__icono fas fa-university"></i>
                         </aside>
                         <div class="card__body">
                             <header class="card__header">
                                 <h3 class="card__titulo">
-                                    Trabajo 4
+                                    <a class="card__link" href="https://www.uab.cat/web/estudiar/listado-de-grados/informacion-general/biologia-1216708258897.html?param1=1231400870814" target="_blank">Licenciatura en Biología</a>
                                 </h3>
+                                <p class="card__institution">
+                                    Universitat Autonoma de Barcelona
+                                </p>
+                                <p class="card__period">
+                                    1982 -1987
+                                </p>
                             </header>
                             <p class="card__extracto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus laudantium eos corrupti deleniti nesciunt!
+                                Proporciona una formación sólida en las diversas materias que comprenden esta ciencia en constante evolución, combinando dos niveles de conocimiento: uno general, con un enfoque integrador y multidisciplinario, y otro de instrumental y aplicado, que capacita para la actividad profesional.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="stack__work" id="work">
+                <header class="head">
+                    <h2 class="head__titulo">
+                        Trabajo
+                    </h2>
+                    <p class="head__extracto">
+                        <strong>En el trabajo</strong> me puedo definir como una persona organizada, constante, trabajadora, perfeccionista, paciente, inquieta, con facilidad de aprendizaje, adaptable y capaz de afrontar nuevos retos.
+                    </p>
+                </header>
+                <div class="cards">
+                    <article class="card">
+                        <aside class="card__aside">
+                            <i class="card__icono fas fa-hourglass-half"></i>
+                        </aside>
+                        <div class="card__body">
+                            <header class="card__header">
+                                <h3 class="card__titulo">
+                                    Desarrollador Web
+                                </h3>
+                                <p class="card__institution">
+                                    Freelance
+                                </p>
+                                <p class="card__period">
+                                    Desde 2010
+                                </p>
+                            </header>
+                            <p class="card__extracto">
+                                Desarrollo de diferentes proyectos web para empresas.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="stack__portfolio" id="portfolio">
+                <header class="head">
+                    <h2 class="head__titulo">
+                        Portfolio
+                    </h2>
+                    <p class="head__extracto">
+                        <strong>Proyectos desarrollados</strong> desde 2010.
+                    </p>
+                </header>
+                <div class="cards">
+                    <article class="card-image">
+                        <div class="card-image__media">
+                            <a href="https://mery-lou.com" target="_blank">
+                                <img class="card-image__image" src="assets/images/project1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-image__body">
+                            <h2 class="card-image__title">
+                                <a class="card-image__title-link" href="https://mery-lou.com" target="_blank">Restaurante Mery-Lou</a>
+                            </h2>
+                            <h3 class="card-image__subtitle">
+                                2018
+                            </h3>
+                            <p class="card-image__copy">
+                                HTML5, CSS3, JavaScript, PHP
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card-image">
+                        <div class="card-image__media">
+                            <a href="https://cyberdietoterapia.com/sostenibilidad" target="_blank">
+                                <img class="card-image__image" src="assets/images/project6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-image__body">
+                            <h2 class="card-image__title">
+                                <a class="card-image__title-link" href="https://cyberdietoterapia.com/sostenibilidad" target="_blank">Objetivos de Sostenibilidad de la ONU</a>
+                            </h2>
+                            <h3 class="card-image__subtitle">
+                                2020
+                            </h3>
+                            <p class="card-image__copy">
+                                HTML5, CSS3, JavaScrip
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card-image">
+                        <div class="card-image__media">
+                            <a href="https://blog.mery-lou.com" target="_blank">
+                                <img class="card-image__image" src="assets/images/project2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-image__body">
+                            <h2 class="card-image__title">
+                                <a class="card-image__title-link" href="https://blog.mery-lou.com" target="_blank">Blog Mery-Lou</a>
+                            </h2>
+                            <h3 class="card-image__subtitle">
+                                2018
+                            </h3>
+                            <p class="card-image__copy">
+                                HTML5, CSS3, JavaScript, PHP, WordPress
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card-image">
+                        <div class="card-image__media">
+                            <a href="https://codeigniter.cyberdietoterapia.com" target="_blank">
+                                <img class="card-image__image" src="assets/images/project3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-image__body">
+                            <h2 class="card-image__title">
+                                <a class="card-image__title-link" href="https://codeigniter.cyberdietoterapia.com" target="_blank">Portal de Noticias New News</a>
+                            </h2>
+                            <h3 class="card-image__subtitle">
+                                2020
+                            </h3>
+                            <p class="card-image__copy">
+                                HTML5, CSS3, JavaScript, PHP, CodeIgniter
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card-image">
+                        <div class="card-image__media">
+                            <a href="https://cyberdietoterapia.com" target="_blank">
+                                <img class="card-image__image" src="assets/images/project4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-image__body">
+                            <h2 class="card-image__title">
+                                <a class="card-image__title-link" href="https://cyberdietoterapia.com" target="_blank">Club de Fans de Asimov</a>
+                            </h2>
+                            <h3 class="card-image__subtitle">
+                                2019
+                            </h3>
+                            <p class="card-image__copy">
+                                HTML5, CSS3, JavaScript
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card-image">
+                        <div class="card-image__media">
+                            <a href="https://jmartinblan.netlify.app" target="_blank">
+                                <img class="card-image__image" src="assets/images/project5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-image__body">
+                            <h2 class="card-image__title">
+                                <a class="card-image__title-link" href="https://jmartinblan.netlify.app" target="_blank">Desarrollo Front-End</a>
+                            </h2>
+                            <h3 class="card-image__subtitle">
+                                2020
+                            </h3>
+                            <p class="card-image__copy">
+                                HTML5, CSS3, JavaScript
                             </p>
                         </div>
                     </article>
@@ -117,26 +314,61 @@
         </main>
         <footer class="footer">
             <div class="footer__stack">
-                <section class="footer__redes redes">
+                <section class="footer__redes redes" id="social-media">
                     <h2 class="redes__titulo">
                         En las redes sociales
                     </h2>
                     <p class="redes__extracto">
-                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Totam aliquam nemo quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus voluptate qui architecto dolor facilis?
+                        <strong>Puedes encontrarme </strong> en las siguientes redes sociales.
                     </p>
-                    <a href="#" class="button button--absolute button--white">
+                    <p><a href="https://www.linkedin.com/in/jesus-martin-blanco-daw/" target="_blank"><i class="redes__icono fab fa-linkedin"></i></a></p>
+                    <p><a href="https://github.com/jesusmartinb" target="_blank"><i class="redes__icono fab fa-github-square"></i></a></p>
+                    <a class="button button--absolute button--white" href="#">
                         <span class="button__texto">Abierto a empleo</span>
                     </a>
                 </section>
                 <section class="footer__video video">
                     <figure class="video__wrapper">
-                        <iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/rPXMfd9yIk4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video class="video-responsive" controls width="560" height="315">
+                            <source src="https://cyberdietoterapia.com/videos/VideoCurriculum.mp4" type="video/mp4">
+                            <source src="https://cyberdietoterapia.com/assets/videos/VideoCurriculum.ogv" type="video/ogg">
+                            <source src="https://cyberdietoterapia.com/assets/videos/VideoCurriculum.webm" type="video/webm">
+                        </video>
                     </figure>
                 </section>
             </div>
         </footer>
     </div>
 
+    <script>
+        const movil = window.matchMedia('screen and (min-width: 100px) and (max-width: 730px)');
+        const boton = document.querySelector('#boton-menu');
+        const menu = document.querySelector('.main-nav');
+        const links = document.querySelectorAll('.main-nav__link');
+
+        movil.addListener(validation);
+
+        function validation(event){
+            if(event.matches){
+                boton.addEventListener('click', mostrarOcultarMenu);
+                links.forEach(function(link){
+                    link.addEventListener('click', mostrarOcultarMenu);
+                });
+            }else{
+                boton.removeEventListener('click', mostrarOcultarMenu)
+            }
+        }
+
+        validation(movil);
+
+        function mostrarOcultarMenu(){
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
