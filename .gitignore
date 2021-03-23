@@ -251,3 +251,8 @@ $RECYCLE.BIN/
 
 ### UOC Boilerplate ###
 dist
+
+
+### Others ###
+# zip compressed files
+*.zip
