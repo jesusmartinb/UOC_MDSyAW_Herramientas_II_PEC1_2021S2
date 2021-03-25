@@ -15,6 +15,7 @@
 
 .hero__titulo {
   margin: 0 0 3rem;
+  font-family: $font-family-serif;
 
   @include desktop {
     margin: 4rem 0;

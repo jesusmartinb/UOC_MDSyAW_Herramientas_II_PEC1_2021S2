@@ -54,6 +54,10 @@
   margin: .3rem 0;
 }
 
+.card-image__title {
+  font-family: $font-family-serif;
+}
+
 .card-image__title-link {
   display: block;
   padding: 10px 20px 10px 10px;
@@ -65,6 +69,7 @@
 
 .card-image__subtitle {
   padding: 0 10px 5px;
+  font-family: $font-family-serif;
   font-size: 1.8rem;
   text-align: $left;
 }

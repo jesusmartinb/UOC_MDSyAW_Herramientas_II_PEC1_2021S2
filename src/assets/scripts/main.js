@@ -19,7 +19,7 @@
 /**
  *
  * Funcionalidad para el despliegue del menu con el botón hamburguesa
- * para dispositivos moviles y tables con un tamaño inferior a los
+ * para dispositivos moviles y tablets con un tamaño inferior a los
  * 730px de ancho
  *
  */

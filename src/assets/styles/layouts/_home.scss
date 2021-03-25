@@ -46,6 +46,7 @@ partir del breackpoint de 920px */
 }
 
 .stack__titulo {
+  font-family: $font-family-serif;
 
   @include desktop {
 
@@ -75,6 +76,10 @@ partir del breackpoint de 920px */
   text-align: $align-head;
 }
 
+.head__titulo {
+  font-family: $font-family-serif;
+}
+
 .head__extracto {
 
   @include desktop {
@@ -93,6 +98,10 @@ partir del breackpoint de 920px */
   /* Se incluye el mixin cards para 1 card */
 
   @include cards(1);
+}
+
+.redes__titulo {
+  font-family: $font-family-serif;
 }
 
 .redes__icono {
