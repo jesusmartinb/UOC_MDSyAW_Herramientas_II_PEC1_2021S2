@@ -24,7 +24,7 @@
  *
  */
 
-const movil = window.matchMedia('screen and (min-width: 100px) and (max-width: 730px)');
+const movil = window.matchMedia('screen and (min-width: 100px) and (max-width: 729px)');
 const boton = document.querySelector('#boton-menu');
 const menu = document.querySelector('.main-nav');
 const links = document.querySelectorAll('.main-nav__link');
